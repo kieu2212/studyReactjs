@@ -19,7 +19,7 @@ export default class BaitapList extends Component {
         let result = listMovie.map((movie,index) => {
             return (
                 <div key={index}>
-                    <div className="card card-movie" style={{ width: "22rem" }} >
+                    <div className="card card-movie">
                         <img src={movie.hinhAnh} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">{movie.tenPhim}</h5>
