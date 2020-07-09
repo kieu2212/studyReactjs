@@ -41,3 +41,23 @@ code {
 .contents{
   display: flex;
 }
+.title{
+  color:red;
+}
+.card-movie .card-img-top{
+  height: 400px;
+}
+.card-body p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  -webkit-line-clamp: 3;
+  height: 75px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+#movie_list >.card-body{
+  display: grid;
+  grid-template-columns: repeat(3,1fr); 
+  grid-gap: 20px;
+}
