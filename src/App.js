@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 // import Baitap1 from "./Bai-tap1"
 // import Baitap2 from './Bai-tap2';
 // import Baitap3 from './Bai-tap3';
@@ -8,9 +8,16 @@ import './App.css';
 // import ExampleHandlingEvent from './handling-event/example';
 // import State from './state';
 // import ListKeys from './list-keys';
-// import BaitapCar from './Baitap-car';
-import BaitapList from './Baitap-list';
+// import Props from './props';
+// import LiftingStateUp from "./lifting-state-up";
+// import LiftingStateUpCart from "./lifting-state-up-cart";
+import Home from "./user-management";
+// import Parent from './LifeCycle/Parent';
 
+// import BaitapCar from './Baitap-car';
+// import BaitapList from './Baitap-list';
+// import HomeRedux from './user-management-redux';
+// import LifeCycle from './LifeCycle';
 
 function App() {
   return (
@@ -18,18 +25,27 @@ function App() {
       {/* <Baitap1/> */}
       {/* <Baitap2/> */}
       {/* <Baitap3/> */}
-      {/* <RenderingElements/>
+      {/* <RenderingElements />
       <hr></hr>
-      <HandlingEvent/>
+      <HandlingEvent />
       <hr></hr>
-      <ExampleHandlingEvent/>
+      <ExampleHandlingEvent />
       <hr></hr>
-      <State/>
+      <State />
       <hr></hr>
-      <ListKeys/>
+      <ListKeys />
       <hr></hr> */}
       {/* <BaitapCar/> */}
-      <BaitapList/>
+      {/* <BaitapList/> */}
+      {/* <hr></hr>
+      <Props/>
+      <hr></hr> */}
+      {/* <LiftingStateUp /> */}
+      {/* <LiftingStateUpCart /> */}
+      <Home />
+      {/* <Parent/> */}
+      {/* <HomeRedux/> */}
+      {/* <LifeCycle/> */}
     </div>
   );
 }

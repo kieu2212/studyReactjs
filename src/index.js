@@ -8,8 +8,19 @@ import "jquery/dist/jquery.min.js";
 import "popper.js/dist/umd/popper.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 
+import {createStore} from "redux";
+import {Provider} from "react-redux";
+import {rootReducers} from "./redux/reducers";
 
-ReactDOM.render(<App />,document.getElementById('root'));
+const store = createStore(rootReducers,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+ReactDOM.render(
+  <Provider store={store}>
+    <App/>
+  </Provider>,
+  document.getElementById("root")
+);
+
+// ReactDOM.render(<App />,document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

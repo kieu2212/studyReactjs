@@ -5,7 +5,7 @@ export default class State extends Component {
         super(props);
 
         this.state = {
-            isLogin : false,
+            isLogin : true,
             username : "Kieu",
             isLogout : false
         };
@@ -13,9 +13,9 @@ export default class State extends Component {
     }
    
     renderHTML = () => {
-        return this.state.isLogin ? (<p>Hello {this.state.username}</p>) :
-            (<button className='btn btn-success' onClick={this.HandleLogin}
-            >Login</button>);
+        return this.state.isLogin ?  (<button className='btn btn-success' onClick={this.HandleLogin}
+        >Login</button>) : (<p>Hello {this.state.username}</p>) 
+           ;
     };
     renderHTML1 = () => {
         return this.state.isLogout ?
@@ -24,7 +24,7 @@ export default class State extends Component {
     }
     HandleLogin = () => {
        this.setState({
-            isLogin : true,
+            isLogin : false,
        });
     };
     HandleLogout = () =>{
